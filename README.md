@@ -34,8 +34,10 @@ bin/kafka-server-start.sh config/server.properties
 #### Workspace Environment
 
 > Modify the zookeeper.properties and producer.properties given to suit your topic and port number of your choice. Start up these servers in the terminal using the commands:
+```
 /usr/bin/zookeeper-server-start zookeeper.properties
 /usr/bin/kafka-server-start producer.properties
+```
 
 > You’ll need to open up two terminal tabs to execute each command.
 
@@ -48,15 +50,19 @@ bin/kafka-server-start.sh config/server.properties
 > The first step is to build a simple Kafka server.
 
 #### Local Environment
-> To see if you correctly implemented the server, use the command bin/kafka-console-consumer.sh --bootstrap-server localhost:<your-port-number> --topic <your-topic-name> --from-beginning to see your output.
+> To see if you correctly implemented the server, use the command 
+```
+bin/kafka-console-consumer.sh --bootstrap-server localhost:<your-port-number> --topic <your-topic-name> --from-beginning to see your output.
+```
 
 #### Workspace Environment
-> To start kafka-consumer-console, use the command /usr/bin/kafka-consumer-console.
+> To start kafka-consumer-console, use the command 
+```
+/usr/bin/kafka-consumer-console.
+```
 Take a screenshot of your kafka-consumer-console output. You will need to include this screenshot as part of your project submission.
 
-
-
-Kafka Consumer Console Output
+#### Kafka Consumer Console Output
 <img src='1.PNG'/>
 
 ### Step 2
@@ -65,14 +71,19 @@ Kafka Consumer Console Output
 > Implement all the TODO items in data_stream.py. You may need to explore the dataset beforehand using a Jupyter Notebook.
 
 > Do a spark-submit using this command: 
+```
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --master local[*] data_stream.py
+```
 
 > Take a screenshot of your progress reporter after executing a Spark job. 
-Progress reporter 
+
+#### Progress reporter 
 <img src='2.1.PNG'/>
 <img src='2.2.PNG'/>
 
 > Take a screenshot of the Spark Streaming UI as the streaming continues. 
+
+#### Spark Streaming UI
 <img src='3.PNG'/>
 
 
