@@ -7,9 +7,13 @@ In this project, you will be provided with a real-world dataset, extracted from 
 You may choose to create your project in the workspace we provide here, or if you wish to develop your project locally, you will need to set up your environment properly as described below:
 
 Spark 2.4.3
+
 Scala 2.11.x
+
 Java 1.8.x
+
 Kafka build with Scala 2.11.x
+
 Python 3.6.x or 3.7.x
 
 ### Beginning the Project
@@ -64,9 +68,10 @@ spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --maste
 > Take a screenshot of your progress reporter after executing a Spark job. 
 Progress reporter 
 <img src='2.1.PNG'/>
+<img src='2.2.PNG'/>
 
 > Take a screenshot of the Spark Streaming UI as the streaming continues. 
-<img src='2.2.PNG'/>
+<img src='3.PNG'/>
 
 
 #### How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
