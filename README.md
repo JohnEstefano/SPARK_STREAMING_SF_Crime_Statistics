@@ -24,8 +24,8 @@ This project requires creating topics, starting Zookeeper and Kafka servers, and
 
 > Use the commands below to start the Zookeeper and Kafka servers. You can find the bin and config folder in the Kafka binary that you have downloaded and unzipped.
 
-bin/zookeeper-server-start.sh config/zookeeper.properties
-bin/kafka-server-start.sh config/server.properties
+'''bin/zookeeper-server-start.sh config/zookeeper.properties
+bin/kafka-server-start.sh config/server.properties'''
 
 > You can start the bootstrap server using this Python command: python producer_server.py.
 
