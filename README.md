@@ -26,7 +26,6 @@ This project requires creating topics, starting Zookeeper and Kafka servers, and
 
 ```
 bin/zookeeper-server-start.sh config/zookeeper.properties
-
 bin/kafka-server-start.sh config/server.properties
 ```
 
