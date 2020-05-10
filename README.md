@@ -100,5 +100,5 @@ spark.streaming.kafka.maxRatePerPartition   10
 
 spark.default.parallelism                   10000
 ```
-processedRowsPerSecond  was used to test for a highest throughput.
+```processedRowsPerSecond```  was used to test for a highest throughput.
 
